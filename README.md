@@ -1,1 +1,1 @@
-# hero-tutorial
+# Angulars hero-app test
