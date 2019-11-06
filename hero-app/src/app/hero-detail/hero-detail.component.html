@@ -1,11 +1,17 @@
 <div *ngIf="hero">
 
     <h2>{{hero.name | uppercase}} Details</h2>
-    <div>
-        <label>type:
-           <!-- <input [(ngModel)]="hero.type" placeholder="type"/> -->
-           <button (click)="onClickMe('Fire')">Fire</button>
-        </label>
+    <div layout="row">
+       <label>type:
+          <button mat-button>Click me!</button>
+           <!--    <button mat-raised-button (click)="onClickMe('Fire')">Fire</button>
+           <button (click)="onClickMe('Earth')">Earth</button>
+             <button (click)="onClickMe('Air')">Air</button>
+             <button (click)="onClickMe('Water')">Water</button>
+             <button (click)="onClickMe('Quantum')">Quantum</button>
+             <button (click)="onClickMe('Shame')">Shame</button>
+             <button (click)="onClickMe('Chaos')">Chaos</button> -->
+       </label>
     </div>
     <div>
       <label>name:

@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Hero } from '../hero';
+import {MatButtonModule} from '@angular/material';
 
 @Component({
   selector: 'app-hero-detail',
@@ -16,7 +17,6 @@ export class HeroDetailComponent implements OnInit {
   }
 
   // Type Button --
-
   onClickMe(selectedtype: "herotype") {
     this.hero.type = selectedtype;
   }
