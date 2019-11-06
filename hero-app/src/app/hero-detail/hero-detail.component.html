@@ -1,21 +1,19 @@
 <div *ngIf="hero">
 
-    <h2>{{hero.name | uppercase}} Details</h2>
-    <div layout="row">
-       <label>type:
-          <button mat-raised-button (click)="onClickMe('Fire')">Fire</button>
-          <button mat-raised-button (click)="onClickMe('Earth')">Earth</button>
-          <button mat-raised-button (click)="onClickMe('Air')">Air</button>
-          <button mat-raised-button (click)="onClickMe('Water')">Water</button>
-          <button mat-raised-button (click)="onClickMe('Quantum')">Quantum</button>
-          <button mat-raised-button (click)="onClickMe('Shame')">Shame</button>
-          <button mat-raised-button (click)="onClickMe('Chaos')">Chaos</button>
-       </label>
-    </div>
+    <h2>{{hero.name}} Details</h2>
     <div>
-      <label>name:
+      <label>Name - 
         <input [(ngModel)]="hero.name" placeholder="name"/>
       </label>
     </div>
+    <div class="button-row" layout="row">
+        <button mat-raised-button (click)="onClickMe('Fire')">Fire</button>
+        <button mat-raised-button (click)="onClickMe('Earth')">Earth</button>
+        <button mat-raised-button (click)="onClickMe('Air')">Air</button>
+        <button mat-raised-button (click)="onClickMe('Water')">Water</button>
+        <button mat-raised-button (click)="onClickMe('Quantum')">Quantum</button>
+        <button mat-raised-button (click)="onClickMe('Shame')">Shame</button>
+        <button mat-raised-button (click)="onClickMe('Chaos')">Chaos</button>
+    </div>
   
-  </div>
+</div>
