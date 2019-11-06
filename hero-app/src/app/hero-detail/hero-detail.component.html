@@ -3,7 +3,8 @@
     <h2>{{hero.name | uppercase}} Details</h2>
     <div>
         <label>type:
-            <input [(ngModel)]="hero.type" placeholder="type"/>
+           <!-- <input [(ngModel)]="hero.type" placeholder="type"/> -->
+           <button (click)="onClickMe('Fire')">Fire</button>
         </label>
     </div>
     <div>

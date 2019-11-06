@@ -15,4 +15,9 @@ export class HeroDetailComponent implements OnInit {
   ngOnInit() {
   }
 
+  // Type Button --
+
+  onClickMe(selectedtype: "herotype") {
+    this.hero.type = selectedtype;
+  }
 }
