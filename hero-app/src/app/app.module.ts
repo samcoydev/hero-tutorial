@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroTypeComponent } from './hero-type/hero-type.component'; // <-- NgModel lives here
 
+import {MatButtonModule} from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +19,8 @@ import { HeroTypeComponent } from './hero-type/hero-type.component'; // <-- NgMo
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
