@@ -1,1 +1,14 @@
-<p>messages works!</p>
+<h2>Messages</h2>
+<div *ngIf="messageService.messages.length">
+
+    <div *ngFor='let message of messageService.messages'> {{message}} </div>
+
+    <div class="button">
+        <button mat-raised-button class="clear"
+        (click)="messageService.clear()">Clear</button>
+    </div>
+</div>
+
+<ng-template #elseblock>
+    <h1>No messages yet</h1>
+</ng-template>
