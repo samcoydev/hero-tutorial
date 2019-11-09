@@ -10,6 +10,7 @@ import { HeroTypeComponent } from './hero-type/hero-type.component'; // <-- NgMo
 
 import {MatButtonModule} from '@angular/material';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MessagesComponent } from './messages/messages.component';
   imports: [
     BrowserModule,
     FormsModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
